@@ -4,7 +4,7 @@ title: Money
 
 # Money
 
-Here are the ways to send or request money from me:
+Here are the ways to send money to me or request money from me:
 
 * **Debit cards** (no sign-up required) using *Square Cash*: [https://cash.me/$garrettheath4](https://cash.me/$garrettheath4)
    * If you want to start using the Square Cash app, [click here](https://cash.me/app/KDCNDTC) and we'll each get $10 with this referral code: `KDCNDTC`
