@@ -37,6 +37,9 @@
       <div class="page-header">
         <h1>Personal Money Transfers</h1>
       </div>
+      <div class="alert alert-warning dollars-known hide" role="alert">
+        <h4>Could you please send me $<span class="dollars-known-amount"></span> using one of the following methods? Thank you!</h4>
+      </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="panel panel-primary">
@@ -44,7 +47,7 @@
               <h3 class="panel-title">Square Cash App</h3>
             </div>
             <div class="panel-body">
-              <h4>Use the <a href="https://cash.me/">Square Cash</a> app and send money to my $Cashtag: <a class="cashtag" href="https://cash.me/$garrettheath4"><code>$garrettheath4</code></a>. This is my preferred way to send and receive money.</h4>
+              <h4>Use the <a href="https://cash.me/">Square Cash</a> app and send money to my $Cashtag: <a class="cashtag-link" href="https://cash.me/$garrettheath4"><code>$garrettheath4</code></a>. This is my preferred way to send and receive money.</h4>
               <!-- TODO: Remove https: in following background:url(..) block -->
               <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-ios"></a>
               <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-android"></a>
@@ -57,7 +60,7 @@
             </div>
             <div class="panel-body">
               <h4>If you don't want to sign up for a cash app, use this webpage to send me money using your debit card. Payments are sent <a href="https://cash.me/security">securely</a> by Square Cash.</h4>
-              <a href="https://cash.me/$garrettheath4" class="btn btn-default cashtag" role="button">Cash Website</a>
+              <a href="https://cash.me/$garrettheath4" class="btn btn-default cashtag-link" role="button"><span class="dollars-unknown show">Cash Website</span><span class="dollars-known hide">Send me $<span class="dollars-known-amount"></span> via Cash Website</span></a>
             </div>
           </div>
         </div>
@@ -103,8 +106,10 @@
     <script>
     var amount = parseFloat(location.search.match(/[\d\.]+/))
     if (amount > 0) {
-      $("a.cashtag").attr("href", "https://cash.me/$garrettheath4/".concat(amount))
-      $("a.btn.cashtag").text("Send me $".concat(amount, " via Cash Website"))
+      $("a.cashtag-link").attr("href", "https://cash.me/$garrettheath4/".concat(amount));
+      $(".dollars-known-amount").text(amount);
+      $(".dollars-unknown").removeClass("show").addClass("hide");
+      $(".dollars-known").removeClass("hide").addClass("show");
     }
     </script>
 
