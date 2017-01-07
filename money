@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- vim: set ts=2 sw=2 sta sts=2 sr et: -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Garrett Koller</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Style for appstore download buttons -->
+    <link rel="stylesheet" href="appstore.css">
+
+  </head>
+
+  <body>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Garrett Koller</h1>
+        <p>Software Engineer in Washington, DC. BS in Computer Science from Washington and Lee University. Originally from Oklahoma.</p>
+      </div>
+
+
+      <div class="page-header">
+        <h1>Personal Money Transfers</h1>
+      </div>
+      <div class="alert alert-warning dollars-known hide" role="alert">
+        <h4>Could you please send me $<span class="dollars-known-amount"></span> using one of the following methods? Thank you!</h4>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Square Cash App</h3>
+            </div>
+            <div class="panel-body">
+              <h4>Use the <a href="https://cash.me/">Square Cash</a> app and send money to my $Cashtag: <a class="cashtag-link" href="https://cash.me/$garrettheath4"><code>$garrettheath4</code></a>. This is my preferred way to send and receive money.</h4>
+              <!-- TODO: Remove https: in following background:url(..) block -->
+              <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-ios"></a>
+              <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-android"></a>
+              <h5>If you haven't signed up to use the Square Cash app before, you can use this referral code when you sign up and we'll both get $10: <a href="https://cash.me/app/KDCNDTC"><code>KDCNDTC</code></a></h5>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Cash Website</h3>
+            </div>
+            <div class="panel-body">
+              <h4>If you don't want to sign up for a cash app, use this webpage to send me money using your debit card. Payments are sent <a href="https://cash.me/security">securely</a> by Square Cash.</h4>
+              <a href="https://cash.me/$garrettheath4" class="btn btn-default cashtag-link" role="button"><span class="dollars-unknown show">Cash Website</span><span class="dollars-known hide">Send me $<span class="dollars-known-amount"></span> via Cash Website</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Venmo App</h3>
+            </div>
+            <div class="panel-body">
+              <h4>If you don't have the Square Cash app and you use <a href="https://venmo.com/about/product/">Venmo</a> instead, send it to my Venmo username: <a href="https://venmo.com/garrettheath4"><code>@garrettheath4</code></a>.</h4>
+              <!-- TODO: Remove https: in following background:url(..) block -->
+              <a href="https://itunes.apple.com/us/app/venmo/id351727428?mt=8" class="btn appstore appstore-ios"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.venmo"class="btn appstore appstore-android"></a>
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Facebook Messenger</h3>
+            </div>
+            <div class="panel-body">
+              <h4>Facebook Messenger now has secure payments built in. To send me money, <a href="http://fb.com/msg/garrettheath4">start a conversation with me</a> in Messenger and click the <code>$ Payments</code> button. You might have to click the <code>… Show More</code> button first to find the <code>$ Payments</code> button.</h4>
+              <a href="https://www.messenger.com/" class="btn btn-default" role="button">Messenger Web App</a>
+              <!-- TODO: Remove https: in following background:url(..) block -->
+              <a href="https://itunes.apple.com/us/app/messenger/id454638411?mt=8" class="btn appstore appstore-ios"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en" class="btn appstore appstore-android"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></script>
+
+    <!-- If there is a number as a URL argument, use it to pre-populate the Cashtag URLs so the Cashtag page loads with the desired dollar amount already typed in. -->
+    <script>
+    var amount = parseFloat(location.search.match(/[\d\.]+/))
+    if (amount > 0) {
+      $("a.cashtag-link").attr("href", "https://cash.me/$garrettheath4/".concat(amount));
+      $(".dollars-known-amount").text(amount);
+      $(".dollars-unknown").removeClass("show").addClass("hide");
+      $(".dollars-known").removeClass("hide").addClass("show");
+    }
+    </script>
+
+  </body>
+</html>

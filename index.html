@@ -1,117 +1,746 @@
-<!DOCTYPE html>
-<!-- vim: set ts=2 sw=2 sta sts=2 sr et: -->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Garrett Heath Koller</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+        <meta name="description" content="Personal and professional web page for Garrett Heath Koller."/>
+        <meta property="og:site_name" content="Garrett Heath Koller"/>
+        <meta property="og:title" content="Garrett Heath Koller"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:image" content="https://garrettheath4.carrd.co/assets/images/card.jpg"/>
+        <meta property="og:description" content="Personal and professional web page for Garrett Heath Koller."/>
+        <meta property="og:url" content="https://garrettheath4.carrd.co"/>
+        <meta property="twitter:card" content="summary_large_image"/>
+        <link rel="stylesheet" href="assets/fonts/CarrdIcons.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Exo:500,100" rel="stylesheet" type="text/css"/>
+        <style>
+            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
 
-    <title>Garrett Koller</title>
+            article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+                display: block;
+            }
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            body {
+                line-height: 1;
+            }
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+            ol,ul {
+                list-style: none;
+            }
 
-    <!-- Style for appstore download buttons -->
-    <link rel="stylesheet" href="appstore.css">
+            blockquote,q {
+                quotes: none;
+            }
 
-  </head>
+            blockquote:before,blockquote:after,q:before,q:after {
+                content: '';
+                content: none;
+            }
 
-  <body>
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
 
-    <div class="container theme-showcase" role="main">
+            body {
+                -webkit-text-size-adjust: none
+            }
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Garrett Koller</h1>
-        <p>Software Engineer in Washington, DC. BS in Computer Science from Washington and Lee University. Originally from Oklahoma.</p>
-      </div>
+            mark {
+                background-color: transparent;
+                color: inherit
+            }
 
+            input::-moz-focus-inner {
+                border: 0;
+                padding: 0
+            }
 
-      <div class="page-header">
-        <h1>Personal Money Transfers</h1>
-      </div>
-      <div class="alert alert-warning dollars-known hide" role="alert">
-        <h4>Could you please send me $<span class="dollars-known-amount"></span> using one of the following methods? Thank you!</h4>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Square Cash App</h3>
+            input,select,textarea {
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                -ms-appearance: none;
+                appearance: none
+            }
+
+            *, *:before, *:after {
+                box-sizing: border-box;
+            }
+
+            body {
+                min-width: 320px;
+                min-height: 100vh;
+                line-height: 1.0;
+                word-wrap: break-word;
+                overflow-x: hidden;
+            }
+
+            strong {
+                color: inherit;
+                font-weight: bolder;
+            }
+
+            em {
+                font-style: italic;
+            }
+
+            code {
+                font-family: "Lucida Console", "Courier New", monospace;
+                font-weight: normal;
+                text-indent: 0;
+                letter-spacing: 0;
+                font-size: 0.9em;
+                margin: 0 0.25em;
+                padding: 0.25em 0.5em;
+                background-color: rgba(144,144,144,0.25);
+                border-radius: 0.25em;
+            }
+
+            mark {
+                background-color: rgba(144,144,144,0.25);
+            }
+
+            a {
+                -moz-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+                -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+                -ms-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+                transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            s {
+                text-decoration: line-through;
+            }
+
+            body:after {
+                content: '';
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+                -moz-pointer-events: none;
+                -webkit-pointer-events: none;
+                -ms-pointer-events: none;
+                pointer-events: none;
+                background-image: linear-gradient(to top, rgba(64,58,89,0.478), rgba(64,58,89,0.478)), url('assets/images/page01.jpg');
+                background-position: 0% 0%, center;
+                background-repeat: repeat, no-repeat;
+                background-size: auto, cover;
+                background-attachment: scroll;
+                background-color: #FFFFFF;
+            }
+
+            body:before {
+                display: block;
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #010204;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+                -moz-transition: opacity 2s ease-in-out 0s, visibility 2s 0s;
+                -webkit-transition: opacity 2s ease-in-out 0s, visibility 2s 0s;
+                -ms-transition: opacity 2s ease-in-out 0s, visibility 2s 0s;
+                transition: opacity 2s ease-in-out 0s, visibility 2s 0s;
+            }
+
+            body.is-loading:before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            html {
+                font-size: 18pt;
+            }
+
+            #wrapper {
+                -webkit-overflow-scrolling: touch;
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                -moz-flex-direction: column;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                -moz-justify-content: center;
+                -webkit-justify-content: center;
+                -ms-justify-content: center;
+                justify-content: center;
+                min-height: 100vh;
+                position: relative;
+                z-index: 1;
+            }
+
+            #main {
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                position: relative;
+                max-width: 100%;
+                z-index: 1;
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                -moz-justify-content: center;
+                -webkit-justify-content: center;
+                -ms-justify-content: center;
+                justify-content: center;
+                text-align: center;
+                -moz-transition: opacity 3s ease 0s,-moz-transform 3s ease 0s;
+                -webkit-transition: opacity 3s ease 0s,-webkit-transform 3s ease 0s;
+                -ms-transition: opacity 3s ease 0s,-ms-transform 3s ease 0s;
+                transition: opacity 3s ease 0s,transform 3s ease 0s;
+                -moz-transform: perspective(1000px) rotateY(0deg);
+                -webkit-transform: perspective(1000px) rotateY(0deg);
+                -ms-transform: perspective(1000px) rotateY(0deg);
+                transform: perspective(1000px) rotateY(0deg);
+                -moz-transform-origin: 50% 50%;
+                -webkit-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+
+            #main > .inner {
+                overflow-x: hidden;
+                width: 44rem;
+                max-width: 100%;
+                padding: 3.90625rem 3.125rem;
+            }
+
+            #main > .inner > * {
+                margin: 1.25rem 0;
+                -moz-transition: opacity 1s ease-in-out 0s;
+                -webkit-transition: opacity 1s ease-in-out 0s;
+                -ms-transition: opacity 1s ease-in-out 0s;
+                transition: opacity 1s ease-in-out 0s;
+            }
+
+            #main > .inner > :first-child {
+                margin-top: 0 !important;
+            }
+
+            #main > .inner > :last-child {
+                margin-bottom: 0 !important;
+            }
+
+            #main > .inner > .image {
+                margin: 1.5625rem 0;
+            }
+
+            #main > .inner > .video {
+                margin: 1.5625rem 0;
+            }
+
+            body.is-loading #main {
+                opacity: 0;
+                -moz-transform: perspective(1000px) rotateY(-15deg);
+                -webkit-transform: perspective(1000px) rotateY(-15deg);
+                -ms-transform: perspective(1000px) rotateY(-15deg);
+                transform: perspective(1000px) rotateY(-15deg);
+            }
+
+            body.is-loading #main > .inner > * {
+                opacity: 0;
+            }
+
+            #main > .inner > :nth-child(2) {
+                -moz-transition-delay: 0.25s;
+                -webkit-transition-delay: 0.25s;
+                -ms-transition-delay: 0.25s;
+                transition-delay: 0.25s;
+            }
+
+            #main > .inner > :nth-child(3) {
+                -moz-transition-delay: 0.5s;
+                -webkit-transition-delay: 0.5s;
+                -ms-transition-delay: 0.5s;
+                transition-delay: 0.5s;
+            }
+
+            #main > .inner > :nth-child(4) {
+                -moz-transition-delay: 0.75s;
+                -webkit-transition-delay: 0.75s;
+                -ms-transition-delay: 0.75s;
+                transition-delay: 0.75s;
+            }
+
+            #main > .inner > :nth-child(5) {
+                -moz-transition-delay: 1s;
+                -webkit-transition-delay: 1s;
+                -ms-transition-delay: 1s;
+                transition-delay: 1s;
+            }
+
+            #credits {
+                cursor: default;
+                margin-top: 1rem !important;
+                width: -moz-max-content;
+                width: -webkit-max-content;
+                width: -ms-max-content;
+                width: max-content;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                color: #FFFFFF;
+                font-family: 'Exo';
+                position: relative;
+                letter-spacing: 0.05rem;
+                left: 0.025rem;
+                font-size: 0.8em;
+                line-height: 1.675;
+                font-weight: 100;
+            }
+
+            #credits a {
+                -moz-transition: opacity 0.25s ease;
+                -webkit-transition: opacity 0.25s ease;
+                -ms-transition: opacity 0.25s ease;
+                transition: opacity 0.25s ease;
+                opacity: 0.5;
+                text-decoration: none !important;
+                text-decoration: underline;
+            }
+
+            #credits a:hover {
+                opacity: 1;
+                text-decoration: none !important;
+                text-decoration: none;
+            }
+
+            h1 br + br, p br + br {
+                display: block;
+                content: ' ';
+            }
+
+            #text01 br + br {
+                margin-top: 0.705rem;
+            }
+
+            #text01 {
+                color: #FFFFFF;
+                font-family: 'Exo';
+                position: relative;
+                letter-spacing: 0.2rem;
+                left: 0.1rem;
+                font-size: 2.625em;
+                line-height: 1.175;
+                font-weight: 500;
+            }
+
+            #text02 br + br {
+                margin-top: 1.005rem;
+            }
+
+            #text02 {
+                color: #FFFFFF;
+                font-family: 'Exo';
+                position: relative;
+                letter-spacing: 0.05rem;
+                left: 0.025rem;
+                font-size: 1em;
+                line-height: 1.675;
+                font-weight: 100;
+            }
+
+            #text02 a {
+                text-decoration: underline;
+            }
+
+            #text02 a:hover {
+                text-decoration: none;
+            }
+
+            #credits br + br {
+                margin-top: 1.005rem;
+            }
+
+            hr {
+                width: 100%;
+                position: relative;
+                padding: 0;
+                border: 0;
+            }
+
+            hr:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #divider01 {
+                height: 1rem;
+                line-height: 1rem;
+            }
+
+            #divider01:before {
+                width: 23%;
+                background-color: rgba(255,255,255,0.231);
+                height: 1px;
+            }
+
+            .icons {
+                cursor: default;
+                padding: 0;
+                letter-spacing: 0;
+            }
+
+            .icons li {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .icons li a {
+                display: block;
+                color: inherit;
+                text-decoration: none;
+                text-align: center;
+                letter-spacing: 0;
+            }
+
+            .icons li a .label {
+                display: none;
+            }
+
+            #icons01 {
+                font-size: 1.25em;
+            }
+
+            #icons01 li {
+                margin: 0.625rem;
+            }
+
+            #icons01 li a {
+                border-radius: 100%;
+                width: 2em;
+                height: 2em;
+                line-height: 2em;
+            }
+
+            #icons01 .n01 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n01:hover {
+                color: #8B9DC3;
+                border-color: #8B9DC3;
+            }
+
+            #icons01 .n02 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n02:hover {
+                color: #00ACED;
+                border-color: #00ACED;
+            }
+
+            #icons01 .n03 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n03:hover {
+                color: #FFFC00;
+                border-color: #FFFC00;
+            }
+
+            #icons01 .n04 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n04:hover {
+                color: #2EBD59;
+                border-color: #2EBD59;
+            }
+
+            #icons01 .n05 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n05:hover {
+                color: #139DEB;
+                border-color: #139DEB;
+            }
+
+            #icons01 .n06 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n06:hover {
+                color: #B5B29A;
+                border-color: #B5B29A;
+            }
+
+            #icons01 .n07 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n07:hover {
+                color: #4183C4;
+                border-color: #4183C4;
+            }
+
+            #icons01 .n08 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n08:hover {
+                color: #0077B5;
+                border-color: #0077B5;
+            }
+
+            #icons01 .n09 {
+                color: #FFFFFF;
+                border: solid 1px #FFFFFF;
+            }
+
+            #icons01 .n09:hover {
+                color: #7575FF;
+                border-color: #7575FF;
+            }
+
+            @media (max-width: 1680px) {
+                html {
+                    font-size: 13pt;
+                }
+            }
+
+            @media (max-width: 1280px) {
+                html {
+                    font-size: 13pt;
+                }
+            }
+
+            @media (max-width: 980px) {
+                html {
+                    font-size: 11pt;
+                }
+            }
+
+            @media (max-width: 736px) {
+                html {
+                    font-size: 11pt;
+                }
+
+                #main > .inner {
+                    padding: 3rem 2rem;
+                }
+            }
+
+            @media (max-width: 360px) {
+                #main > .inner {
+                    padding: 2.5rem 1.25rem;
+                }
+
+                #text01 {
+                    font-size: 2em;
+                }
+
+                #icons01 li {
+                    margin: 0.46875rem;
+                }
+            }
+        </style>
+        <noscript>
+            <style>
+                body {
+                    overflow: auto !important;
+                }
+
+                body:before {
+                    display: none !important;
+                }
+
+                #main {
+                    opacity: 1.0 !important;
+                    -moz-transform: none !important;
+                    -webkit-transform: none !important;
+                    -ms-transform: none !important;
+                    transform: none !important;
+                    -moz-transition: none !important;
+                    -webkit-transition: none !important;
+                    -ms-transition: none !important;
+                    transition: none !important;
+                    -moz-filter: none !important;
+                    -webkit-filter: none !important;
+                    -ms-filter: none !important;
+                    filter: none !important;
+                }
+
+                #main > .inner > * {
+                    opacity: 1.0 !important;
+                    -moz-transform: none !important;
+                    -webkit-transform: none !important;
+                    -ms-transform: none !important;
+                    transform: none !important;
+                    -moz-transition: none !important;
+                    -webkit-transition: none !important;
+                    -ms-transition: none !important;
+                    transition: none !important;
+                    -moz-filter: none !important;
+                    -webkit-filter: none !important;
+                    -ms-filter: none !important;
+                    filter: none !important;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body class="is-loading">
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+                    <h1 id="text01">GARRETT HEATH KOLLER</h1>
+                    <p id="text02">
+                        <span>
+                            I am a Software Engineer in Washington, DC. I graduated with a BS in Computer Science from <a href="http://www.wlu.edu/">Washington and Lee University</a>
+                            in 2014. I &#39;m originally from Sand Springs, Oklahoma.
+                        </span>
+                        <br/>
+                        <span>
+                            I work for <a href="http://catalist.us/">Catalist, LLC</a>
+                            , which is a semi-non-profit company that provides civic data and analytics to progressive social and political organizations.
+                        </span>
+                    </p>
+                    <hr id="divider01"/>
+                    <ul class="icons" id="icons01">
+                        <li>
+                            <a class="icon icon-906 n01" href="http://www.facebook.com/garrettheath4">
+                                <span class="label">facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-905 n02" href="https://twitter.com/garrettheath4">
+                                <span class="label">twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-900 n03" href="http://www.snapchat.com/add/garrettheath4">
+                                <span class="label">snapchat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-924 n04" href="https://play.spotify.com/user/garrettheath4">
+                                <span class="label">spotify</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-923 n05" href="http://steamcommunity.com/id/garrettheath4/">
+                                <span class="label">steam</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-94a n06" href="http://goodreads.com/garrettheath4">
+                                <span class="label">goodreads</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-907 n07" href="https://github.com/garrettheath4">
+                                <span class="label">github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-90b n08" href="https://www.linkedin.com/in/garrettheath4">
+                                <span class="label">linkedin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon icon-950 n09" href="http://bit.ly/gh4resume">
+                                <span class="label">document-alt</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p id="credits">
+                        <a href="https://carrd.co">( Made with Carrd )</a>
+                    </p>
+                </div>
             </div>
-            <div class="panel-body">
-              <h4>Use the <a href="https://cash.me/">Square Cash</a> app and send money to my $Cashtag: <a class="cashtag-link" href="https://cash.me/$garrettheath4"><code>$garrettheath4</code></a>. This is my preferred way to send and receive money.</h4>
-              <!-- TODO: Remove https: in following background:url(..) block -->
-              <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-ios"></a>
-              <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-android"></a>
-              <h5>If you haven't signed up to use the Square Cash app before, you can use this referral code when you sign up and we'll both get $10: <a href="https://cash.me/app/KDCNDTC"><code>KDCNDTC</code></a></h5>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Cash Website</h3>
-            </div>
-            <div class="panel-body">
-              <h4>If you don't want to sign up for a cash app, use this webpage to send me money using your debit card. Payments are sent <a href="https://cash.me/security">securely</a> by Square Cash.</h4>
-              <a href="https://cash.me/$garrettheath4" class="btn btn-default cashtag-link" role="button"><span class="dollars-unknown show">Cash Website</span><span class="dollars-known hide">Send me $<span class="dollars-known-amount"></span> via Cash Website</span></a>
-            </div>
-          </div>
         </div>
-        <div class="col-sm-6">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Venmo App</h3>
-            </div>
-            <div class="panel-body">
-              <h4>If you don't have the Square Cash app and you use <a href="https://venmo.com/about/product/">Venmo</a> instead, send it to my Venmo username: <a href="https://venmo.com/garrettheath4"><code>@garrettheath4</code></a>.</h4>
-              <!-- TODO: Remove https: in following background:url(..) block -->
-              <a href="https://itunes.apple.com/us/app/venmo/id351727428?mt=8" class="btn appstore appstore-ios"></a>
-              <a href="https://play.google.com/store/apps/details?id=com.venmo"class="btn appstore appstore-android"></a>
-            </div>
-          </div>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Facebook Messenger</h3>
-            </div>
-            <div class="panel-body">
-              <h4>Facebook Messenger now has secure payments built in. To send me money, <a href="http://fb.com/msg/garrettheath4">start a conversation with me</a> in Messenger and click the <code>$ Payments</code> button. You might have to click the <code>… Show More</code> button first to find the <code>$ Payments</code> button.</h4>
-              <a href="https://www.messenger.com/" class="btn btn-default" role="button">Messenger Web App</a>
-              <!-- TODO: Remove https: in following background:url(..) block -->
-              <a href="https://itunes.apple.com/us/app/messenger/id454638411?mt=8" class="btn appstore appstore-ios"></a>
-              <a href="https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en" class="btn appstore appstore-android"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></script>
-
-    <!-- If there is a number as a URL argument, use it to pre-populate the Cashtag URLs so the Cashtag page loads with the desired dollar amount already typed in. -->
-    <script>
-    var amount = parseFloat(location.search.match(/[\d\.]+/))
-    if (amount > 0) {
-      $("a.cashtag-link").attr("href", "https://cash.me/$garrettheath4/".concat(amount));
-      $(".dollars-known-amount").text(amount);
-      $(".dollars-unknown").removeClass("show").addClass("hide");
-      $(".dollars-known").removeClass("hide").addClass("show");
-    }
-    </script>
-
-  </body>
+        <script>
+            var on = addEventListener
+              , $ = function(q) {
+                return document.querySelector(q)
+            }
+              , $$ = function(q) {
+                return document.querySelectorAll(q)
+            }
+              , $body = document.body
+              , $inner = $('.inner');
+            on('load', function() {
+                setTimeout(function() {
+                    $body.className = $body.className.replace(/\bis-loading\b/, 'is-playing');
+                    setTimeout(function() {
+                        $body.className = $body.className.replace(/\bis-playing\b/, 'is-ready');
+                    }, 3000);
+                }, 100);
+            });
+            var style, sheet, rule;
+            style = document.createElement('style');
+            style.appendChild(document.createTextNode(''));
+            document.head.appendChild(style);
+            sheet = style.sheet;
+            if (navigator.userAgent.match(/Android ([0-9\.]+)/)) {
+                (function() {
+                    sheet.insertRule('body::after { }', 0);
+                    rule = sheet.cssRules[0];
+                    var f = function() {
+                        rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px';
+                    };
+                    on('load', f);
+                    on('orientationchange', f);
+                    on('touchmove', f);
+                })();
+            } else if (navigator.userAgent.match(/([0-9_]+) like Mac OS X/) || navigator.userAgent.match(/CPU like Mac OS X/)) {
+                (function() {
+                    sheet.insertRule('body::after { }', 0);
+                    rule = sheet.cssRules[0];
+                    rule.style.cssText = '-webkit-transform: scale(1.0)';
+                })();
+            } else if (navigator.userAgent.match(/(MSIE|rv:11\.0)/)) {
+                (function() {
+                    var t, f;
+                    f = function() {
+                        var x = $('#wrapper');
+                        if (x.scrollHeight > innerHeight)
+                            x.style.height = 'auto';
+                        else
+                            x.style.height = '100vh';
+                    }
+                    ;
+                    (f)();
+                    on('resize', function() {
+                        clearTimeout(t);
+                        t = setTimeout(f, 250);
+                    });
+                })();
+            }
+        </script>
+    </body>
 </html>
