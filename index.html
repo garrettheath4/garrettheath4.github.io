@@ -44,7 +44,7 @@
               <h3 class="panel-title">Square Cash App</h3>
             </div>
             <div class="panel-body">
-              <h4>Use the <a href="https://cash.me/">Square Cash</a> app and send money to my $Cashtag: <a href="https://cash.me/$garrettheath4"><code>$garrettheath4</code></a>. This is my preferred way to send and receive money.</h4>
+              <h4>Use the <a href="https://cash.me/">Square Cash</a> app and send money to my $Cashtag: <a class="cashtag" href="https://cash.me/$garrettheath4"><code>$garrettheath4</code></a>. This is my preferred way to send and receive money.</h4>
               <!-- TODO: Remove https: in following background:url(..) block -->
               <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-ios"></a>
               <a href="https://cash.me/app/KDCNDTC" class="btn appstore appstore-android"></a>
@@ -57,7 +57,7 @@
             </div>
             <div class="panel-body">
               <h4>If you don't want to sign up for a cash app, use this webpage to send me money using your debit card. Payments are sent <a href="https://cash.me/security">securely</a> by Square Cash.</h4>
-              <a href="https://cash.me/$garrettheath4" class="btn btn-default" role="button">Cash Website</a>
+              <a href="https://cash.me/$garrettheath4" class="btn btn-default cashtag" role="button">Cash Website</a>
             </div>
           </div>
         </div>
@@ -98,6 +98,15 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></script>
+
+    <!-- If there is a number as a URL argument, use it to pre-populate the Cashtag URLs so the Cashtag page loads with the desired dollar amount already typed in. -->
+    <script>
+    var amount = parseFloat(location.search.match(/[\d\.]+/))
+    if (amount > 0) {
+      $("a.cashtag").attr("href", "https://cash.me/$garrettheath4/".concat(amount))
+      $("a.btn.cashtag").text("Send me $".concat(amount, " via Cash Website"))
+    }
+    </script>
 
   </body>
 </html>
